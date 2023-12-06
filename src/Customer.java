@@ -11,11 +11,14 @@ public class Customer {
         this.amountOfProducts = amountOfProducts;
         this.totalPrice = totalPrice;
 
-        I´ll change the syntax to match the syntax used for the other constructors with "..In".
+        **I´ll change the syntax to match the syntax used for the other constructors with "..In".
         One could argue that when a customer is constructed that it has no totalPrice yet, unless we account for debt.
        -> totalPrice should be implicitly set to 0, totalPrice = 0; when a customer object is made.
        The same argument holds true for amountOfProducts, when a customer enters no amount of products have been bought
+
+       **Comment not current, was when constructor had inparameters
         */
+
          this.totalPrice = 0;
          this.amountOfProducts = 0;
          /*Hardcoded in total amount in store, could be dynamically updated*/
@@ -61,7 +64,7 @@ public class Customer {
 
 
         }
-        System.out.printf("\nYou purchased a total of %d items. The total cost was %.2f SEK. You saved %.2f\n",
+        System.out.printf("\nYou purchased a total of %d items. The total cost was %.2f SEK. You saved %.2f SEK\n",
                 amountOfProducts, totalPrice,totalAmountSaved);
         }
     }

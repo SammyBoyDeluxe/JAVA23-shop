@@ -6,7 +6,7 @@ public class Products {
     /*Access modifier 'protected': We can access the property inside this class and its childclasses*/
     protected boolean isDiscounted = false;
 
-    Products(String name, double price, int amountInStock) {
+    public Products(String name, double price, int amountInStock) {
         this.NAME = name;
         this.price = price;
         this.amountInStock = amountInStock;
