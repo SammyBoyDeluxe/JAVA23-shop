@@ -3,6 +3,8 @@ public class Products {
     private final String NAME;
     private double price;
     private int amountInStock;
+    /*Access modifier 'protected': We can access the property inside this class and its childclasses*/
+    protected boolean isDiscounted = false;
 
     Products(String name, double price, int amountInStock) {
         this.NAME = name;
@@ -40,5 +42,11 @@ public class Products {
             amountInStock--;
             return price;
         }
+    }
+
+    /*We implement a getter to see if the specific object is a DiscountedProduct*/
+
+    public boolean isDiscounted() {
+        return isDiscounted;
     }
 }
